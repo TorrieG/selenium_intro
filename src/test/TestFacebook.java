@@ -35,7 +35,7 @@ public class TestFacebook {
 
         System.out.println(driver.findElement(By.cssSelector("#pass")).isDisplayed() ? "Password PASSED" : "Password FAILED");
 
-        WebElement login = driver.findElement(By.cssSelector("._42ft"));
+        WebElement login = driver.findElement(By.xpath("//button[starts-with(@id,'u_0')]"));
 
         System.out.println((login.isDisplayed() && login.isEnabled()) ? "Log In PASSED" : "Log In FAILED");
 

@@ -20,7 +20,7 @@ public class _11_Locator_xpath {
         WebDriver driver = Driver.getDriver();
         driver.get("https://www.google.com/");
 
-        List<WebElement> allLinks = driver.findElements(By.xpath("//div[@class='KxwPGc AghGtd']//a")); // all 3 elements
+        List<WebElement> allLinks = driver.findElements(By.xpath("//div[@class='KxwPGc AghGtd']/a")); // all 3 elements
         String[] expectedLinkTexts = {"Advertising", "Business", "How Search works"};
 
         for (int i = 0; i < 3; i++) {

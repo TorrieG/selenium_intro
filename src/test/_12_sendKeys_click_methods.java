@@ -25,7 +25,7 @@ public class _12_sendKeys_click_methods {
         driver.get("https://www.wikipedia.org/");
 
         WebElement search = driver.findElement(By.cssSelector("#searchInput"));
-        //WebElement button = driver.findElement(By.cssSelector("#pute-button"));
+        //WebElement button = driver.findElement(By.cssSelector("#pure-button"));
 
         search.sendKeys("Tesla" + Keys.ENTER);
 
